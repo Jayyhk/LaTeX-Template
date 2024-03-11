@@ -1,1 +1,1 @@
-My LaTeX template, primarily for math homework writeups.
+My LaTeX template, primarily for mathematics homework writeups.
