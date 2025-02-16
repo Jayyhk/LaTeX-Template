@@ -9,7 +9,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{palatino}
 \usepackage{graphicx}
+\usepackage{microtype}
 \usepackage{xcolor}
+\pagestyle{fancy}
 \setlength{\parindent}{0pt}
 \graphicspath{{./images/}}
 \hbadness=10000
@@ -39,32 +41,22 @@
 \usepackage{caption, diagbox, empheq, fancyhdr, float, multicol, pgfplots, url}
 \usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage{changepage}
-\usepackage[framemethod=TikZ]{mdframed}
-\usepackage[many]{tcolorbox}
+\usepackage{enumitem}
 \usepackage{moresize}
 \usepackage{import}
+\usepackage[many]{tcolorbox}
+\newcommand*\widefbox[1]{\fbox{\hspace{1em}#1\hspace{1em}}}
 
 %%-----------------------------
 %% TikZ, PGFPlots & Libraries
 %%-----------------------------
 \usepackage{tikz}
+\usepackage{tikz-3dplot}
 \usetikzlibrary{
   3d, arrows.meta, automata, backgrounds, calc, graphs, patterns, positioning, quotes,
   shadings, angles, decorations.pathmorphing, decorations.pathreplacing, 
   fadings, perspective, intersections, decorations.markings, bending
 }
+\usepackage[framemethod=TikZ]{mdframed}
 \pgfplotsset{compat=1.18}
 \usepgfplotslibrary{groupplots, external, colormaps, patchplots, fillbetween}
-\usepackage{tikz-3dplot}
-
-%%-----------------------------
-%% List Customization
-%%-----------------------------
-\usepackage{enumitem}
-
-%%-----------------------------
-%% Custom Settings & Commands
-%%-----------------------------
-\pagestyle{fancy}
-\newcommand*\widefbox[1]{\fbox{\hspace{1em}#1\hspace{1em}}}
-\def\pp{\par\noindent}
