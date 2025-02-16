@@ -2,6 +2,19 @@
 \ProvidesPackage{style}[2025/02/16 Custom style package]
 
 %%-----------------------------
+%% Functional Packages
+%%-----------------------------
+\usepackage{caption, diagbox, empheq, fancyhdr, float, multicol, pgfplots, url}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{moresize}
+\usepackage{import}
+\usepackage[many]{tcolorbox}
+\pagestyle{fancy}
+\newcommand*\widefbox[1]{\fbox{\hspace{1em}#1\hspace{1em}}}
+
+%%-----------------------------
 %% Layout, Fonts, and Graphics
 %%-----------------------------
 \usepackage[margin=22.4mm, bottom=1in, top=1in, footskip=31.5pt]{geometry}
@@ -11,13 +24,12 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{xcolor}
-\pagestyle{fancy}
 \setlength{\parindent}{0pt}
 \graphicspath{{./images/}}
 \hbadness=10000
 
 %%-----------------------------
-%% Mathematics Packages & Operators
+%% Mathematics Packages and Operators
 %%-----------------------------
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage[scr]{rsfso}
@@ -36,19 +48,7 @@
 \usepackage{cancel}
 
 %%-----------------------------
-%% Additional Functional Packages
-%%-----------------------------
-\usepackage{caption, diagbox, empheq, fancyhdr, float, multicol, pgfplots, url}
-\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
-\usepackage{changepage}
-\usepackage{enumitem}
-\usepackage{moresize}
-\usepackage{import}
-\usepackage[many]{tcolorbox}
-\newcommand*\widefbox[1]{\fbox{\hspace{1em}#1\hspace{1em}}}
-
-%%-----------------------------
-%% TikZ, PGFPlots & Libraries
+%% TikZ and PGFPlots
 %%-----------------------------
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
