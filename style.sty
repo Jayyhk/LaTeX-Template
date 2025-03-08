@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{style}[2025/02/16 Custom style package]
+\ProvidesPackage{style}
 
 %%-----------------------------
 %% Layout, Fonts, and Graphics
@@ -52,8 +52,13 @@
 %%-----------------------------
 \usepackage{listings}
 \usepackage{minted}
-\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
-\SetKwComment{Comment}{/* }{ */}
+\usepackage[linesnumbered,ruled,vlined,nofillcomment,noend]{algorithm2e}
+\DontPrintSemicolon
+\SetAlgoNoEnd
+\SetNlSty{textbf}{}{.}
+\SetArgSty{textnormal}
+\newcommand\mycommfont[1]{ \textcolor{blue}{{#1}}}
+\SetCommentSty{mycommfont}
 
 %%-----------------------------
 %% TikZ and PGFPlots
